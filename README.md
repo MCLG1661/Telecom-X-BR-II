@@ -1,0 +1,2 @@
+# Desafio Telecom X BR II
+📈 Desenvolver modelos preditivos capazes de prever quais clientes têm maior chance de cancelar seus serviços. A empresa quer antecipar o problema da evasão, e cabe a você construir um pipeline robusto para essa etapa inicial de modelagem - Tech Foundation : Especialização Data Science - Módulo : Aprendendo a Fazer ETL (Oracle Next Education G9 BR)
