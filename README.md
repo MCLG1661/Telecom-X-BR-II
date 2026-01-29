@@ -8,7 +8,16 @@ Este desafio, o terceiro da terceira etapa na Tech Foundation 2 do ONE (Oracle N
 
 Utilizando Python e suas principais bibliotecas, coletar, tratar, analisar dados e desenvolver um Sistema Preditivo de Machine Learning, capaz de identificar quais clientes têm maior probabilidade de cancelar seus serviços. O projeto transforma dados históricos em ações estratégicas de retenção, permitindo à empresa economizar até R$ 1.020.000/ano.
 
+---
+
 ✨ Destaques do Projeto
+
+✅ 79.2% de Recall - Detecta a maioria dos cancelamentos antes que aconteçam
+✅ 75.4% de Precisão - Alta confiabilidade nas previsões positivas
+✅ 85.1% ROC-AUC - Excelente capacidade discriminativa
+✅ Identificação de 3 perfis de alto risco com taxas de churn específicas
+✅ Dashboard estratégico com plano de ação detalhado
+
 ---
 
 
