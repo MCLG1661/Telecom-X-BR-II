@@ -33,3 +33,29 @@ Utilizando Python e suas principais bibliotecas, coletar, tratar, analisar dados
 
 ---
 
+## 📁 Estrutura do Projeto
+
+telecomx-churn-predictor/
+│
+├── 📊 telecomx_model/              # Artefatos salvos
+│   ├── modelo_churn_Random_Forest.pkl
+│   ├── preprocessor.pkl
+│   ├── feature_names.pkl
+│   └── resumo_resultados.csv
+│
+├── 📈 visualizations/              # Gráficos e dashboards
+│   ├── correlation_matrix.png
+│   ├── feature_importance.png
+│   └── roc_curves.png
+│
+├── 📋 TelecomX_Churn_Analysis.ipynb  # Notebook completo
+├── 📄 README.md                     # Este arquivo
+└── 📑 requirements.txt             # Dependências
+
+---
+
+
+
+
+---
+
