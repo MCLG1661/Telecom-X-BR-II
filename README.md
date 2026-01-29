@@ -20,13 +20,6 @@ Utilizando Python e suas principais bibliotecas, coletar, tratar, analisar dados
 
 ---
 
-📈 Resultados Financeiros
-
-- Tx de Churn Atual	26.5%
-- Redução Alvo	    25%  - Economia de R$ 255.000/ano
-- Clientes Recup.   850	 - Economia de R$ 1.020.000/ano
-- ROI Esperado	    2.5x - Retorno sobre investimento
-
 ## 🛠️ Tecnologias Utilizadas
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python&logoColor=white)
@@ -34,6 +27,9 @@ Utilizando Python e suas principais bibliotecas, coletar, tratar, analisar dados
 ![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-purple?logo=pandas&logoColor=white)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-orange?logo=matplotlib&logoColor=white)
 ![Seaborn](https://img.shields.io/badge/Seaborn-Statistical%20Plots-teal?logo=seaborn&logoColor=white)
+![Scikit](https://img.shields.io/badge/Scikit--learn-1.3%252B-orange)
+![NumPy](https://img.shields.io/badge/NumPy-1.24%252B-blueviolet)
+![Joblib](https://img.shields.io/badge/Joblib-1.3%252B-yellowgreen)
 
 ---
 
