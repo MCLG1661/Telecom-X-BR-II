@@ -14,7 +14,7 @@ Utilizando Python e suas principais bibliotecas, coletar, tratar, analisar dados
 
 - 79.2% de Recall - Detecta a maioria dos cancelamentos antes que aconteçam
 - 75.4% de Precisão - Alta confiabilidade nas previsões positivas
-- 85.1% ROC-AUC - Excelente capacidade discriminativa
+- 85.1% ROC/AUC - Excelente capacidade discriminativa
 - Identificação de 3 perfis de alto risco com taxas de churn específicas
 - Dashboard estratégico com plano de ação detalhado
 
