@@ -79,6 +79,7 @@ Instale as dependências:
 
 ## 🙏 Agradecimento
 
+- A todas as professoras e professores da Alura nessa jornada
 - Equipe de dados da TelecomX BR pelos dados fornecidos
 
 ---
