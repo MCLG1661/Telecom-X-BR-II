@@ -1,6 +1,25 @@
-## Desafio Telecom X BR II
-## 📈 Desenvolver modelos preditivos capazes de prever quais clientes têm maior chance de cancelar seus serviços. A empresa quer antecipar o problema da evasão, e para isso foi construído um pipeline robusto para essa etapa inicial de modelagem.                            - Tech Foundation : Especialização Data Science - Módulo : Aprendendo a Fazer ETL (Oracle Next Education G9 BR)
-Este desafio, o terceiro da terceira etapa na Tech Foundation 2 do ONE (Oracle Next Education) G9 BR tem como objetivo preparar os dados para a modelagem (tratamento, encoding, normalização), realizar análise de correlação e seleção de variáveis, treinar dois ou mais modelos de classificação, avaliar o desempenho dos modelos com métricas, interpretar os resultados, incluindo a importância das variáveis.
+## # 📡 Telecom X II — Predição de Churn com Machine Learning
+
+*Machine Learning aplicado à identificação de clientes com risco de cancelamento*
+
+![Python](https://img.shields.io/badge/Python-Machine%20Learning-blue?logo=python)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-Machine%20Learning-F7931E?logo=scikitlearn)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Classification-success)
+![Alura](https://img.shields.io/badge/Oracle%20ONE-Alura-0A3871)
+
+O **Telecom X II** é um projeto de Data Science desenvolvido para construir 
+modelos preditivos capazes de identificar clientes com maior probabilidade de 
+cancelamento dos serviços de uma empresa de telecomunicações.
+
+O projeto representa a evolução da análise exploratória realizada no 
+**Telecom X I**, avançando para preparação dos dados, seleção de variáveis, 
+treinamento de modelos de classificação, avaliação de performance e 
+interpretação dos fatores associados ao churn.
+
+Desenvolvido durante a **Tech Foundation — Especialização Data Science**, 
+integrante do programa **Oracle Next Education (ONE) G9 BR / Alura**.
 
 ---
 
