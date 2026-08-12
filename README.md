@@ -23,13 +23,80 @@ integrante do programa **Oracle Next Education (ONE) G9 BR / Alura**.
 
 ---
 
-## 📌 Objetivo
+## 🎯 Objetivo
 
-Utilizando Python e suas principais bibliotecas, coletar, tratar, analisar dados e desenvolver um Sistema Preditivo de Machine Learning, capaz de identificar quais clientes têm maior probabilidade de cancelar seus serviços. O projeto transforma dados históricos em ações estratégicas de retenção, permitindo à empresa economizar até R$ 1.020.000/ano.
+Desenvolver um sistema preditivo de Machine Learning capaz de utilizar dados 
+históricos dos clientes para estimar o risco de churn.
+
+A solução busca transformar os padrões identificados durante a análise de dados 
+em informações capazes de apoiar estratégias preventivas de retenção
 
 ---
 
-✨ Destaques do Projeto
+## 🔗 Evolução do Projeto
+
+O Telecom X II dá continuidade ao trabalho iniciado no Telecom X I :
+
+```text
+
+Telecom X I
+ETL + EDA + Business Insights
+        ↓
+Preparação dos Dados
+        ↓
+Feature Engineering
+        ↓
+Seleção de Variáveis
+        ↓
+Treinamento dos Modelos
+        ↓
+Avaliação
+        ↓
+Telecom X II
+Machine Learning + Predição de Churn
+        ↓
+Identificação de Clientes de Risco
+        ↓
+Estratégias de Retenção
+
+```
+
+---
+
+## 🔬 Pipeline de Machine Learning
+
+```text
+
+Dados Históricos
+      ↓
+Tratamento
+      ↓
+Encoding
+      ↓
+Normalização
+      ↓
+Análise de Correlação
+      ↓
+Seleção de Features
+      ↓
+Treinamento
+      ↓
+Modelos de Classificação
+      ↓
+Avaliação
+      ↓
+Interpretação
+      ↓
+Predição de Churn
+
+```
+
+---
+
+✨ Resultados e Destaques do Projeto
+
+Os modelos desenvolvidos alcançaram resultados relevantes na identificação
+de clientes com risco de evasão.
 
 - 79.2% de Recall - Detecta a maioria dos cancelamentos antes que aconteçam
 - 75.4% de Precisão - Alta confiabilidade nas previsões positivas
@@ -37,7 +104,56 @@ Utilizando Python e suas principais bibliotecas, coletar, tratar, analisar dados
 - Identificação de 3 perfis de alto risco com taxas de churn específicas
 - Dashboard estratégico com plano de ação detalhado
 
+Por que o Recall é importante ?
+
+Em um problema de churn, identificar corretamente clientes que apresentam
+risco de cancelamento é particularmente relevante.
+Um Recall de 79,2% indica que o modelo consegue identificar uma parcela
+significativa dos clientes que efetivamente apresentam comportamento de churn. 
+
 ---
+
+## 🚨 Principais Fatores Associados ao Churn
+
+A análise identificou algumas características relevantes para a previsão :
+
+- Tipo de contrato
+- Tempo de relacionamento com a empresa
+- Valor mensal da conta
+- Tipo de serviço de internet
+- Contratação de serviços adicionais
+
+Essas variáveis ajudam a caracterizar perfis com diferentes níveis de risco.
+
+---
+
+💼 Aplicação ao Negócio
+
+A utilização de modelos preditivos permite migrar de uma estratégia
+predominantemente reativa para uma abordagem preventiva.
+
+```text
+Modelo Preditivo
+      ↓
+Identificação de Risco
+      ↓
+Segmentação dos Clientes
+      ↓
+Priorização
+      ↓
+Ações de Retenção
+      ↓
+Monitoramento dos Resultados
+```
+
+Entre as possíveis aplicações estão :
+
+- Identificação antecipada de clientes com maior risco
+- Priorização de campanhas de retenção
+- Personalização de ofertas
+- Revisão de planos e contratos
+- Desenvolvimento de estratégias específicas por segmento
+- Otimização dos recursos destinados à retenção
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -54,23 +170,14 @@ Utilizando Python e suas principais bibliotecas, coletar, tratar, analisar dados
 
 ## 📁 Estrutura do Projeto
 
-telecomx-churn-predictor/
-│
-├── 📊 telecomx_model/              # Artefatos salvos
-│   ├── modelo_churn_Random_Forest.pkl
-│   ├── preprocessor.pkl
-│   ├── feature_names.pkl
-│   └── resumo_resultados.csv
-│
-├── 📈 visualizations/              # Gráficos e dashboards
-│   ├── correlation_matrix.png
-│   ├── feature_importance.png
-│   └── roc_curves.png
-│
-├── 📋 TelecomX_Churn_Analysis.ipynb  # Notebook completo
-├── 📄 README.md                     # Este arquivo
-└── 📑 requirements.txt             # Dependências
+´´´text
 
+Telecom-X-BR-II/
+│
+├── Telecom_X_BR_II.ipynb
+└── README.md
+
+```
 ---
 
 ## 🔍 Visualizações e Insights
