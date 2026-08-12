@@ -222,7 +222,7 @@ Telecom-X-BR-II/
 
 ---
 
-## ⬅️ Etapa anterior:** Telecom X I — ETL, EDA e análise de churn
+## ⬅️ Etapa anterior: Telecom X I — ETL, EDA e análise de churn
 
 ---
 
