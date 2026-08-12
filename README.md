@@ -160,11 +160,17 @@ Entre as possíveis aplicações estão :
 ## 🛠️ Tecnologias
 	
 **Python** - Desenvolvimento e análise
+
 **Pandas** - Manipulação e preparação dos dados
+
 **NumPy** - Operações numéricas
+
 **Scikit-learn** - Machine Learning e avaliação dos modelos
+
 **Matplotlib** - Visualização dos resultados
+
 **Seaborn** - Visualizações estatísticas
+
 **Jupyter / Google Colab** - Desenvolvimento e execução 
 
 ---
