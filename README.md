@@ -155,29 +155,15 @@ Entre as possíveis aplicações estão :
 - Desenvolvimento de estratégias específicas por segmento
 - Otimização dos recursos destinados à retenção
 
-## 🛠️ Tecnologias Utilizadas
-
-![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python&logoColor=white)
-![Google Colab](https://img.shields.io/badge/Google%20Colab-Notebook-yellow?logo=googlecolab&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-purple?logo=pandas&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-orange?logo=matplotlib&logoColor=white)
-![Seaborn](https://img.shields.io/badge/Seaborn-Statistical%20Plots-teal?logo=seaborn&logoColor=white)
-![Scikit](https://img.shields.io/badge/Scikit--learn-1.3%252B-orange)
-![NumPy](https://img.shields.io/badge/NumPy-1.24%252B-blueviolet)
-![Joblib](https://img.shields.io/badge/Joblib-1.3%252B-yellowgreen)
-
 ---
 
 ## 📁 Estrutura do Projeto
-
-´´´text
 
 Telecom-X-BR-II/
 │
 ├── Telecom_X_BR_II.ipynb
 └── README.md
 
-```
 ---
 
 ## 🔍 Visualizações e Insights
