@@ -1,6 +1,6 @@
-## # 📡 Telecom X II — Predição de Churn com Machine Learning
+# 📡 Telecom X BR II — Predição de Churn com Machine Learning
 
-*Machine Learning aplicado à identificação de clientes com risco de cancelamento*
+> **Machine Learning aplicado à identificação de clientes com maior risco de cancelamento e apoio a estratégias preventivas de retenção.**
 
 ![Python](https://img.shields.io/badge/Python-Machine%20Learning-blue?logo=python)
 ![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas)
@@ -9,37 +9,44 @@
 ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Classification-success)
 ![Alura](https://img.shields.io/badge/Oracle%20ONE-Alura-0A3871)
 
-O **Telecom X II** é um projeto de Data Science desenvolvido para construir 
-modelos preditivos capazes de identificar clientes com maior probabilidade de 
-cancelamento dos serviços de uma empresa de telecomunicações.
+---
 
-O projeto representa a evolução da análise exploratória realizada no 
-**Telecom X I**, avançando para preparação dos dados, seleção de variáveis, 
-treinamento de modelos de classificação, avaliação de performance e 
-interpretação dos fatores associados ao churn.
+## 💼 Sobre o Projeto
 
-Desenvolvido durante a **Tech Foundation — Especialização Data Science**, 
-integrante do programa **Oracle Next Education (ONE) G9 BR / Alura**.
+O **Telecom X BR II** é um projeto de Data Science voltado à construção de modelos preditivos capazes de identificar clientes com maior probabilidade de churn em uma empresa de telecomunicações.
+
+O projeto representa a evolução natural do **Telecom X BR I**, que concentrou a análise em ETL, Análise Exploratória de Dados e Business Insights.
+
+Nesta segunda etapa, o foco passa a ser:
+
+- preparação dos dados;
+- feature engineering;
+- seleção de variáveis;
+- treinamento de modelos de classificação;
+- avaliação de performance;
+- interpretação dos resultados;
+- aplicação das previsões ao contexto de retenção de clientes.
+
+O projeto foi desenvolvido durante a **Tech Foundation — Especialização Data Science**, integrante do programa **Oracle Next Education (ONE) G9 BR / Alura**.
 
 ---
 
 ## 🎯 Objetivo
 
-Desenvolver um sistema preditivo de Machine Learning capaz de utilizar dados 
-históricos dos clientes para estimar o risco de churn.
+Construir um pipeline de Machine Learning capaz de utilizar dados históricos dos clientes para estimar o risco de churn e apoiar estratégias preventivas de retenção.
 
-A solução busca transformar os padrões identificados durante a análise de dados 
-em informações capazes de apoiar estratégias preventivas de retenção
+A proposta é transformar padrões observados nos dados em um mecanismo preditivo capaz de responder:
+
+> **Quais clientes apresentam maior risco de cancelamento e devem ser priorizados em ações de retenção?**
 
 ---
 
 ## 🔗 Evolução do Projeto
 
-O Telecom X II dá continuidade ao trabalho iniciado no Telecom X I :
+O Telecom X BR II dá continuidade ao estudo iniciado no Telecom X BR I.
 
 ```text
-
-Telecom X I
+Telecom X BR I
 ETL + EDA + Business Insights
         ↓
 Preparação dos Dados
@@ -52,21 +59,21 @@ Treinamento dos Modelos
         ↓
 Avaliação
         ↓
-Telecom X II
+Telecom X BR II
 Machine Learning + Predição de Churn
         ↓
 Identificação de Clientes de Risco
         ↓
-Estratégias de Retenção
-
+Estratégias Preventivas de Retenção
 ```
+
+🔗 [Acessar Telecom X BR I](https://github.com/MCLG1661/Telecom-X-BR-I)
 
 ---
 
 ## 🔬 Pipeline de Machine Learning
 
 ```text
-
 Dados Históricos
       ↓
 Tratamento
@@ -88,49 +95,57 @@ Avaliação
 Interpretação
       ↓
 Predição de Churn
-
 ```
 
 ---
 
-✨ Resultados e Destaques do Projeto
+## 📊 Resultados do Projeto
 
-Os modelos desenvolvidos alcançaram resultados relevantes na identificação
-de clientes com risco de evasão.
+Os modelos desenvolvidos apresentaram resultados relevantes na identificação de clientes com risco de evasão.
 
-- 79.2% de Recall - Detecta a maioria dos cancelamentos antes que aconteçam
-- 75.4% de Precisão - Alta confiabilidade nas previsões positivas
-- 85.1% ROC/AUC - Excelente capacidade discriminativa
-- Identificação de 3 perfis de alto risco com taxas de churn específicas
-- Dashboard estratégico com plano de ação detalhado
+| Métrica | Resultado | Interpretação |
+|---|---:|---|
+| **Recall** | **79,2%** | Capacidade de identificar grande parte dos clientes que efetivamente apresentam churn |
+| **Precisão** | **75,4%** | Confiabilidade das previsões positivas realizadas pelo modelo |
+| **ROC/AUC** | **85,1%** | Capacidade discriminativa do modelo entre clientes com e sem churn |
 
-Por que o Recall é importante ?
+Também foram identificados **três perfis de maior risco**, além de fatores relevantes associados à evasão.
 
-Em um problema de churn, identificar corretamente clientes que apresentam
-risco de cancelamento é particularmente relevante.
-Um Recall de 79,2% indica que o modelo consegue identificar uma parcela
-significativa dos clientes que efetivamente apresentam comportamento de churn. 
+---
+
+## 🎯 Por que Priorizar Recall?
+
+Em problemas de churn, um dos principais riscos do modelo é classificar como seguro um cliente que, na prática, está prestes a cancelar.
+
+Esse tipo de erro representa um **falso negativo**.
+
+Por isso, o Recall é uma métrica especialmente relevante:
+
+> **Quanto maior o Recall, maior a capacidade do modelo de capturar clientes que realmente apresentam risco de churn.**
+
+Com Recall de **79,2%**, o modelo consegue identificar uma parcela significativa dos clientes que efetivamente apresentam comportamento de evasão.
+
+Do ponto de vista de negócio, isso pode ser mais importante do que maximizar apenas a acurácia global.
 
 ---
 
 ## 🚨 Principais Fatores Associados ao Churn
 
-A análise identificou algumas características relevantes para a previsão :
+A análise identificou algumas características relevantes para a previsão:
 
-- Tipo de contrato
-- Tempo de relacionamento com a empresa
-- Valor mensal da conta
-- Tipo de serviço de internet
-- Contratação de serviços adicionais
+- tipo de contrato;
+- tempo de relacionamento com a empresa;
+- valor mensal da conta;
+- tipo de serviço de internet;
+- contratação de serviços adicionais.
 
 Essas variáveis ajudam a caracterizar perfis com diferentes níveis de risco.
 
 ---
 
-💼 Aplicação ao Negócio
+## 💼 Aplicação ao Negócio
 
-A utilização de modelos preditivos permite migrar de uma estratégia
-predominantemente reativa para uma abordagem preventiva.
+A utilização de modelos preditivos permite migrar de uma estratégia predominantemente reativa para uma abordagem mais preventiva.
 
 ```text
 Modelo Preditivo
@@ -146,32 +161,42 @@ Ações de Retenção
 Monitoramento dos Resultados
 ```
 
-Entre as possíveis aplicações estão :
+Entre as possíveis aplicações estão:
 
-- Identificação antecipada de clientes com maior risco
-- Priorização de campanhas de retenção
-- Personalização de ofertas
-- Revisão de planos e contratos
-- Desenvolvimento de estratégias específicas por segmento
-- Otimização dos recursos destinados à retenção
+- identificação antecipada de clientes com maior risco;
+- priorização de campanhas de retenção;
+- personalização de ofertas;
+- revisão de planos e contratos;
+- desenvolvimento de estratégias específicas por segmento;
+- otimização dos recursos destinados à retenção.
 
 ---
 
-## 🛠️ Tecnologias
-	
-**Python** - Desenvolvimento e análise
+## 🧠 Interpretação Gerencial
 
-**Pandas** - Manipulação e preparação dos dados
+O valor do modelo não está apenas em prever churn, mas em apoiar decisões mais direcionadas.
 
-**NumPy** - Operações numéricas
+A combinação entre **probabilidade de churn, perfil do cliente e fatores associados à evasão** pode ajudar a empresa a:
 
-**Scikit-learn** - Machine Learning e avaliação dos modelos
+- identificar clientes prioritários;
+- segmentar ações de retenção;
+- reduzir desperdício de recursos;
+- melhorar a eficiência das campanhas;
+- antecipar possíveis perdas de receita.
 
-**Matplotlib** - Visualização dos resultados
+---
 
-**Seaborn** - Visualizações estatísticas
+## 🛠️ Tecnologias Utilizadas
 
-**Jupyter / Google Colab** - Desenvolvimento e execução 
+| Tecnologia | Aplicação |
+|---|---|
+| **Python** | Desenvolvimento e modelagem |
+| **Pandas** | Manipulação e preparação dos dados |
+| **NumPy** | Operações numéricas |
+| **Scikit-learn** | Treinamento e avaliação dos modelos |
+| **Matplotlib** | Visualização de resultados |
+| **Seaborn** | Visualizações estatísticas |
+| **Jupyter / Google Colab** | Desenvolvimento e execução |
 
 ---
 
@@ -183,64 +208,76 @@ Telecom-X-BR-II/
 ├── Telecom_X_BR_II.ipynb
 └── README.md
 ```
+
 ---
 
 ## 💡 Competências Demonstradas
 
-- Machine Learning
-- Classification
-- Customer Churn Prediction
-- Python
-- Pandas
-- Scikit-learn
-- Data Preprocessing
-- Feature Engineering
-- Encoding
-- Normalização
-- Feature Selection
-- Model Evaluation
-- Precision
-- Recall
-- ROC/AUC
-- Data Visualization
-- Business Analytics
-- Data-Driven Decision Making
+O projeto aplica conhecimentos e práticas relacionados a:
+
+- Machine Learning;
+- Classification;
+- Customer Churn Prediction;
+- Python;
+- Pandas;
+- Scikit-learn;
+- Data Preprocessing;
+- Feature Engineering;
+- Encoding;
+- Normalização;
+- Feature Selection;
+- Model Evaluation;
+- Precision;
+- Recall;
+- ROC/AUC;
+- Data Visualization;
+- Business Analytics;
+- Data-Driven Decision Making.
 
 ---
 
-##🚀 Possíveis Evoluções
+## 🚀 Possíveis Evoluções
 
-- Comparação sistemática entre novos algoritmos
-- Otimização de hiperparâmetros
-- Cross-validation
-- Pipeline automatizado de pré-processamento
-- Explicabilidade dos modelos
-- API para disponibilização das previsões
-- Dashboard para acompanhamento de clientes de risco
-- Deploy do modelo em Cloud
-- Monitoramento de performance do modelo
+O projeto pode evoluir para uma solução mais próxima de produção por meio de:
 
----
-
-## ⬅️ Etapa anterior: Telecom X I — ETL, EDA e Análise de Churn
-
----
-
-## 🙏 Agradecimento
-
-- A todas as professoras e professores da Alura nessa jornada
-- Equipe de dados da TelecomX BR pelos dados fornecidos
+- comparação sistemática entre novos algoritmos;
+- otimização de hiperparâmetros;
+- cross-validation;
+- pipeline automatizado de pré-processamento;
+- explicabilidade dos modelos;
+- API para disponibilização das previsões;
+- dashboard para acompanhamento de clientes de risco;
+- deploy do modelo em Cloud;
+- monitoramento de performance;
+- detecção de drift;
+- re-treinamento periódico.
 
 ---
 
-👨‍💻 Autor
+## ⬅️ Etapa Anterior
 
-Marcus Guedes
+### Telecom X BR I — ETL, EDA e Análise de Churn
 
-Marketing | Data Science | Inteligência Artificial | Gestão de Projetos
+🔗 [Explorar Telecom X BR I](https://github.com/MCLG1661/Telecom-X-BR-I)
 
-GitHub: MCLG1661
+---
 
-LinkedIn: Marcus Guedes
+## 📚 Contexto Acadêmico
 
+Projeto desenvolvido durante a **Tech Foundation — Especialização Data Science**, integrante do programa **Oracle Next Education (ONE) G9 BR / Alura**.
 
+A proposta foi evoluir da análise exploratória para a construção de modelos preditivos aplicados ao problema de Customer Churn.
+
+---
+
+## 👤 Autor
+
+### Marcus Guedes
+
+**Project Management | PMO | Operations & Performance | Data Analytics & AI for Business**
+
+[GitHub](https://github.com/MCLG1661) • [LinkedIn](https://www.linkedin.com/in/marcusguedes/)
+
+---
+
+⭐ Projeto de estudo e portfólio focado em **Machine Learning aplicado à predição de churn e apoio a estratégias preventivas de retenção**.
