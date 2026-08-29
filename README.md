@@ -8,7 +8,7 @@
 
 ## 🎯 Visão Geral
 
-O **Telecom X BR II** é um projeto de Machine Learning aplicado à **predição de churn de clientes**, desenvolvido como evolução da análise exploratória realizada no Telecom X BR I.
+O **Telecom X BR II** é um projeto de Machine Learning aplicado à **predição de churn de clientes**, desenvolvido como evolução da análise exploratória realizada no Telecom X BR I. 
 
 O objetivo é transformar dados históricos de clientes em um modelo capaz de identificar perfis com maior risco de cancelamento e apoiar estratégias de **retenção, CRM e tomada de decisão orientada por dados**.
 
