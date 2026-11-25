@@ -319,7 +319,7 @@ O notebook foi estruturado para permitir a execução sequencial do pipeline com
 
 ## 🔗 Continuidade do Projeto
 
-Este projeto é uma evolução do **Telecom X BR I**, etapa dedicada à exploração, tratamento e compreensão dos dados.
+Este projeto é uma evolução do [**Telecom X BR I**](https://github.com/MCLG1661/Telecom-X-BR-I), etapa dedicada à exploração, tratamento e compreensão dos dados.
 
 O Telecom X BR II avança para a construção de modelos preditivos e aplicação de Machine Learning ao problema de churn.
 
