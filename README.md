@@ -51,13 +51,13 @@ A variável-alvo foi definida explicitamente como:
 
 Registros sem informação válida de churn foram excluídos da modelagem supervisionada.
 
-O conjunto de teste permaneceu separado do processo de treinamento e otimização.
+O conjunto de teste foi reservado para a avaliação final. A seleção do algoritmo e dos hiperparâmetros foi feita por validação cruzada estratificada em cinco partições do conjunto de treino.
 
 ---
 
 ## 📊 Dataset
 
-Após a validação da variável-alvo:
+O notebook baixa o [JSON público do desafio](https://raw.githubusercontent.com/ingridcristh/challenge2-data-science/main/TelecomX_Data.json) e normaliza os registros. Após a validação da variável-alvo:
 
 - **7.267 registros** no dataset original
 - **224 registros** sem target válido
@@ -77,9 +77,9 @@ O pipeline de preparação dos dados inclui:
 - padronização de variáveis numéricas;
 - codificação de variáveis categóricas;
 - separação estratificada entre treino e teste;
-- remoção das variáveis diretamente relacionadas ao target;
+- remoção do identificador do cliente e das colunas relacionadas ao target;
 - prevenção de **target leakage**;
-- aplicação do pré-processamento aprendido exclusivamente no conjunto de treino.
+- ajuste do pré-processamento na parte de treino de cada partição da validação cruzada. Ao final, o pipeline selecionado é reajustado com todo o conjunto de treino.
 
 Essa abordagem evita que informações do conjunto de teste sejam utilizadas durante o treinamento do modelo.
 
@@ -109,25 +109,25 @@ A otimização foi realizada exclusivamente sobre os dados de treinamento, utili
 
 ## 🏆 Resultado do Modelo Final
 
-O modelo final apresentou os seguintes resultados no conjunto de teste:
+O modelo final (LogisticRegression) apresentou os seguintes resultados nos 1.409 clientes do conjunto de teste:
 
 | Métrica | Resultado |
 |---|---:|
-| **Accuracy** | **73,81%** |
-| **Precision** | **50,42%** |
-| **Recall** | **79,41%** |
-| **F1-score** | **61,68%** |
-| **ROC-AUC** | **0,8352** |
+| **Accuracy** | **73,95%** |
+| **Precision** | **50,60%** |
+| **Recall** | **78,61%** |
+| **F1-score** | **61,57%** |
+| **ROC-AUC** | **0,8433** |
 
 ### 🔎 Como interpretar esses resultados?
 
-O **Recall de 79,41%** indica que o modelo conseguiu identificar aproximadamente **8 em cada 10 casos reais de churn** presentes no conjunto de teste.
+O **Recall de 78,61%** indica que o modelo conseguiu identificar **294 dos 374 casos reais de churn** presentes no conjunto de teste.
 
-A **Precision de 50,42%** evidencia um trade-off relevante: ao priorizar maior cobertura dos clientes que podem cancelar, o modelo também produz falsos positivos.
+A **Precision de 50,60%** evidencia um trade-off relevante: ao priorizar maior cobertura dos clientes que podem cancelar, o modelo também produz falsos positivos.
 
 Em uma aplicação real, esse equilíbrio deve ser analisado em conjunto com o custo das ações de retenção e o valor econômico da perda de clientes.
 
-O **ROC-AUC de 0,8352** indica boa capacidade do modelo de discriminar entre clientes com e sem churn ao longo de diferentes thresholds de classificação.
+O **ROC-AUC de 0,8433** indica boa capacidade do modelo de discriminar entre clientes com e sem churn ao longo de diferentes thresholds de classificação.
 
 ---
 
@@ -154,7 +154,7 @@ A curva ROC mostra a relação entre a taxa de verdadeiros positivos e falsos po
 
 O modelo alcançou:
 
-> **ROC-AUC = 0,8352**
+> **ROC-AUC = 0,8433**
 
 Esse resultado demonstra capacidade discriminativa relevante e reforça que o threshold padrão de `0.50` não precisa necessariamente ser o ponto operacional ideal.
 
@@ -311,7 +311,13 @@ git clone https://github.com/MCLG1661/Telecom-X-BR-II.git
 Telecom_X_BR_II.ipynb
 ```
 
-3. Execute as células sequencialmente em ambiente compatível com Jupyter Notebook ou Google Colab.
+3. Instale as bibliotecas no ambiente do notebook, se necessário:
+
+```bash
+pip install pandas numpy scikit-learn matplotlib
+```
+
+4. Execute as células em sequência no Jupyter ou Google Colab com acesso à internet para baixar o JSON público.
 
 O notebook foi estruturado para permitir a execução sequencial do pipeline completo.
 
@@ -333,7 +339,7 @@ O Telecom X BR II avança para a construção de modelos preditivos e aplicaçã
 
 O projeto demonstra como técnicas de Machine Learning podem ser aplicadas a um problema empresarial relevante, conectando **dados, modelagem preditiva e tomada de decisão**.
 
-O modelo final apresentou **Recall de 79,41%** e **ROC-AUC de 0,8352**, demonstrando capacidade relevante para identificar clientes pertencentes à classe de churn.
+O modelo final apresentou **Recall de 78,61%** e **ROC-AUC de 0,8433**, demonstrando capacidade relevante para identificar clientes pertencentes à classe de churn.
 
 Mais importante do que produzir uma previsão isolada, a aplicação proposta permite transformar probabilidades em **priorização, segmentação e ações de retenção mensuráveis**.
 
