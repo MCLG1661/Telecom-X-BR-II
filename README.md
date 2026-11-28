@@ -6,6 +6,10 @@
 ![Status](https://img.shields.io/badge/Status-Concluído-success)
 ![ONE](https://img.shields.io/badge/Oracle%20ONE-Tech%20Advanced-red)
 
+## English overview
+
+A supervised learning follow-up to the Telecom X exploratory churn study. The notebook compares classifiers, tunes the selected model using cross-validation on the training set, and evaluates it on a held-out test set to illustrate retention prioritization.
+
 ## 🎯 Visão Geral
 
 O **Telecom X BR II** é um projeto de Machine Learning aplicado à **predição de churn de clientes**, desenvolvido como evolução da análise exploratória realizada no Telecom X BR I. 
